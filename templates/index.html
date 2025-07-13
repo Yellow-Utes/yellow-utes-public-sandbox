@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="row">
+    <div class="col-md-8 offset-md-2">
+        <div class="jumbotron bg-light p-5 rounded">
+            <h1 class="display-4">Welcome to Your Python Web App!</h1>
+            <p class="lead">This is a boilerplate Flask application running on AWS Elastic Beanstalk with Python 3.13.</p>
+            <hr class="my-4">
+            <p>Your application is successfully deployed and running.</p>
+            <a class="btn btn-primary btn-lg" href="/api/info" role="button">View API Info</a>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Health Check</h5>
+                        <p class="card-text">Monitor your application's health status.</p>
+                        <a href="/health" class="btn btn-success">Check Health</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">API Endpoint</h5>
+                        <p class="card-text">Access application information via API.</p>
+                        <a href="/api/info" class="btn btn-info">Get Info</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

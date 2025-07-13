@@ -1,0 +1,29 @@
+{
+  "input_dim": 11,
+  "d_model": 128,
+  "nhead": 8,
+  "num_layers": 4,
+  "prediction_length": 7,
+  "sequence_length": 14,
+  "inference_target": "distance_km",
+  "feature_cols": [
+    "utes_driven",
+    "day_of_week",
+    "is_weekend",
+    "month",
+    "seasonal_scalar",
+    "days_in_business",
+    "is_holiday",
+    "midday_temp",
+    "weather_category",
+    "wind_speed"
+  ],
+  "training_metrics": {
+    "mae": 0.9819351434707642,
+    "mse": 1.400237798690796,
+    "rmse": 1.1833164406407932
+  },
+  "created_at": "2025-07-13T16:08:40.940270",
+  "pytorch_version": "2.7.1",
+  "model_type": "TimeSeriesTransformer"
+}
